@@ -1,0 +1,6 @@
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
+build/Debug/2-3.o
+build/Debug/outDebug
+build/Debug/4.o
