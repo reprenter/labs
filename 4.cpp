@@ -1,6 +1,7 @@
 #include <iostream>
 
 float dayAverage(float* row, int h) {
+    if (h == 0) return 0.0f;
     float sum = 0.0f;
     for (int j = 0; j < h; ++j)
         sum += *(row + j);
@@ -8,6 +9,7 @@ float dayAverage(float* row, int h) {
 }
 
 float overallAverage(float** p, int d, int h) {
+    if (d == 0 || h == 0) return 0.0f;
     float sum = 0.0f;
     for (int i = 0; i < d; ++i)
         for (int j = 0; j < h; ++j)

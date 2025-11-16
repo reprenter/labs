@@ -6,6 +6,7 @@ void inputData(float* p, int n) {
 }
 
 float average(const float* p, int n) {
+    if (n == 0) return 0.0f;
     float sum = 0.0f;
     for (int i = 0; i < n; ++i)
         sum += *(p + i);
